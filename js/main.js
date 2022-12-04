@@ -7,8 +7,8 @@
   -- Web Design and Client Side Scripting (HDSDEV_SEP)
   -- Continuous Assessment Project.
   -- 
-  -- Submitted by: Luiz Canedo & Giulia Culoma
-  -- Student IDs: x22117601 & x21248532
+  -- Submitted by: Luiz Canedo and Giulia Culoma
+  -- Student IDs: x22117601 and x21248532
   --
   -- Tested using Google Chrome.
   -- -----------------------------------------------------
@@ -22,7 +22,9 @@ function toggleDrawer() {
   if ($('#drawer').length) {
     // Check if drawer-backdrop exists.
     if ($('#drawer-backdrop').length) {
+      // Toggle page scrolling.
       $('body').toggleClass('modal');
+      // Show/hide drawer backdrop.
       $('#drawer-backdrop').toggleClass('opened-drawer');
     }
     // Open/close drawer.
@@ -38,11 +40,25 @@ function toggleDrawer() {
 
 // When document is ready.
 $(document).ready(function () {
-  // Add open/close function to drawer-switch class.
-  $('.drawer-switch').on('click', function (event) {
+  // Set click event for drawer-switch class.
+  $('.drawer-switch').click(function (event) {
     // Prevent default click behavior.
     event.preventDefault();
     // Open/close drawer.
     toggleDrawer();
+  });
+
+  // Set click event for fake-link class.
+  $('.fake-link').click(function (event) {
+    // Prevent default click behavior.
+    event.preventDefault();
+    // Display a SweetAlert message when a fake link is clicked.
+    Swal.fire({
+      icon: 'info',
+      text: '"' + $(this).text().trim() + '" link was clicked!',
+    });
+
+    // Log info.
+    console.log('"' + $(this).text().trim() + '" link was clicked!');
   });
 });
