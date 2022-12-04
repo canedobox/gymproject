@@ -404,6 +404,115 @@ body.modal {
 }
 
 /***********************************************************************
+***                           PAGE CONTENT                           ***
+***********************************************************************/
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section-wrapper:first-child {
+  padding-top: var(--topbar-height-default);
+}
+
+.section-content {
+  padding: var(--padding-default);
+}
+
+/***********************************************************************
+***                              FOOTER                              ***
+***********************************************************************/
+
+.footer-wrapper {
+  font-size: 0.75em;
+  color: var(--color-gray-200);
+  background-color: var(--color-gray-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-content {
+  padding: var(--padding-default);
+  width: 100%;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-large);
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  width: var(--logo-width);
+  height: var(--logo-height);
+  text-decoration: none !important;
+}
+
+.footer__logo > img {
+  width: auto;
+  height: 100%;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--padding-default) / 2);
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer__nav__item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.footer__nav__link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: var(--color-gray-200) !important;
+  border-left: var(--border-width) solid var(--color-gray-700);
+  display: flex;
+  align-items: center;
+  padding: 0 calc(var(--padding-default) / 2);
+  height: var(--icon-size);
+  text-decoration: none !important;
+}
+
+.footer__nav__link:hover {
+  background-color: var(--color-gray-700);
+}
+
+/***********************************************************************
 ***                             TABLETS                              ***
 ***********************************************************************/
 
@@ -418,6 +527,10 @@ body.modal {
 
   .drawer-wrapper {
     max-width: var(--drawer-max-width) !important;
+  }
+
+  .footer-columns {
+    flex-direction: row;
   }
 }
 
@@ -473,6 +586,26 @@ body.modal {
   .drawer__sidenav__link {
     padding: 0 var(--padding-desktop);
     height: var(--topbar-height-desktop);
+  }
+
+  .section-wrapper:first-child {
+    padding-top: var(--topbar-height-desktop);
+  }
+
+  .section-content {
+    padding: var(--padding-desktop);
+  }
+
+  .footer-content {
+    padding: var(--padding-desktop);
+  }
+
+  .footer-info {
+    gap: calc(var(--padding-desktop) / 2);
+  }
+
+  .footer__nav__link {
+    padding: 0 calc(var(--padding-desktop) / 2);
   }
 }
 

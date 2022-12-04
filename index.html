@@ -38,6 +38,9 @@
     />
     <!-- jQuery -->
     <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
   </head>
 
   <body>
@@ -140,6 +143,69 @@
       <!-- Drawer backdrop, block user clicks until the drawer is closed. -->
       <div id="drawer-backdrop" class="drawer-backdrop drawer-switch"></div>
     </aside>
+
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Main -->
+      <main>
+        <div class="main-wrapper">
+          <section class="section-wrapper">
+            <div class="section-content container"></div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-content container">
+            <div class="footer-columns">
+              <!-- Logo -->
+              <div class="footer__logo-wrapper">
+                <a class="footer__logo" href="./">
+                  <img src="./images/logo-light.svg" alt="GYMPROJECT logo" />
+                </a>
+              </div>
+
+              <!-- Footer information -->
+              <div class="footer-info">
+                <span>&copy;2022 GYMPROJECT</span>
+
+                <!-- Footer navigation menu -->
+                <nav>
+                  <ul class="footer__nav">
+                    <li class="footer__nav__item">
+                      <a
+                        class="footer__nav__link"
+                        onclick="Swal.fire({icon:'info', text: 'Terms footer link clicked!'})"
+                      >
+                        Terms
+                      </a>
+                    </li>
+                    <li class="footer__nav__item">
+                      <a
+                        class="footer__nav__link"
+                        onclick="Swal.fire({icon:'info', text: 'Privacy footer link clicked!'})"
+                      >
+                        Privacy
+                      </a>
+                    </li>
+                    <li class="footer__nav__item">
+                      <a
+                        class="footer__nav__link"
+                        onclick="Swal.fire({icon:'info', text: 'Cookies footer link clicked!'})"
+                      >
+                        Cookies
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <!-- Main JavaScript file -->
     <script src="./js/main.js"></script>
