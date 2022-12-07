@@ -1,0 +1,78 @@
+/*
+  -- -----------------------------------------------------
+  -- National College of Ireland
+  -- Higher Diploma in Science in Computing
+  -- 2022/2023
+  --
+  -- Web Design and Client Side Scripting (HDSDEV_SEP)
+  -- Continuous Assessment Project.
+  -- 
+  -- Submitted by: Luiz Canedo and Giulia Culoma
+  -- Student IDs: x22117601 and x21248532
+  --
+  -- Tested using Google Chrome.
+  -- -----------------------------------------------------
+*/
+
+.class-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.class-card {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.class-card__image {
+  display: flex;
+  width: 100%;
+}
+
+.class-card__image > img {
+  width: 100%;
+  height: auto;
+}
+
+.class-card__content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 20px;
+  padding: 20px;
+}
+
+.class-card__title {
+  color: #ff4081;
+}
+
+.class-card__description {
+  color: #666666;
+}
+
+/***********************************************************************
+***                             TABLETS                              ***
+***********************************************************************/
+
+@media only screen and (min-width: 480px) {
+}
+
+/***********************************************************************
+***                             LAPTOPS                              ***
+***********************************************************************/
+
+@media only screen and (min-width: 768px) {
+  .class-card {
+    max-width: 400px;
+  }
+}

@@ -137,6 +137,8 @@ body.modal {
 }
 
 .container {
+  text-align: center;
+  width: 100%;
   max-width: var(--container-max-width) !important;
 }
 
