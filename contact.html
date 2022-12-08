@@ -28,6 +28,13 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact-page.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +44,10 @@
     />
     <!-- jQuery -->
     <script src="./js/jquery-3.6.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    ></script>
     <!-- SweetAlert -->
     <script
       src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"
@@ -69,10 +80,14 @@
                 <a class="topbar__navbar__link" href="./">Home</a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./classes.html">Classes</a>
+                <a class="topbar__navbar__link" href="./classes.html"
+                  >Classes</a
+                >
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./timetable.html">Timetable</a>
+                <a class="topbar__navbar__link" href="./timetable.html"
+                  >Timetable</a
+                >
               </li>
               <li class="topbar__navbar__item">
                 <a
@@ -127,10 +142,14 @@
                 <a class="drawer__sidenav__link" href="./">Home</a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./classes.html">Classes</a>
+                <a class="drawer__sidenav__link" href="./classes.html"
+                  >Classes</a
+                >
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./timetable.html">Timetable</a>
+                <a class="drawer__sidenav__link" href="./timetable.html"
+                  >Timetable</a
+                >
               </li>
               <li class="drawer__sidenav__item">
                 <a
@@ -155,7 +174,66 @@
       <main>
         <div class="main-wrapper">
           <div class="section-wrapper">
-            <div class="section-content container">CONTACT US PAGE</div>
+            <div class="section-content container">
+              <!--Card form-->
+              <form
+                name="formValidation"
+                id="formValidation"
+                action="valid.html"
+                class="form-container"
+              >
+                <div class="contact-form-box">
+                  <h1 class="contact-card-title">Contact Us</h1>
+                  <!--Name Label-->
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      class="form-control"
+                      id="name"
+                      type="text"
+                      name="Name"
+                      required
+                    />
+                  </div>
+                  <!--Email label-->
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      class="form-control"
+                      id="email"
+                      type="email"
+                      name="Email"
+                      required
+                    />
+                  </div>
+                  <!--Selection menu-->
+                  <div class="form-group">
+                    <select
+                      class="form-select"
+                      aria-label="select-option"
+                      required
+                    >
+                      <option selected>Please select an option</option>
+                      <option value="1">I want to join!</option>
+                      <option value="2">General info</option>
+                      <option value="3">Feedback</option>
+                      <option value="3">Other</option>
+                    </select>
+                  </div>
+                  <!--Message box-->
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="formMessage"
+                      required
+                    ></textarea>
+                  </div>
+                  <input class="contact-btn" type="submit" value="Submit" />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </main>
