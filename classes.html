@@ -1,0 +1,502 @@
+<!--
+  -- -----------------------------------------------------
+  -- National College of Ireland
+  -- Higher Diploma in Science in Computing
+  -- 2022/2023
+  --
+  -- Web Design and Client Side Scripting (HDSDEV_SEP)
+  -- Continuous Assessment Project.
+  -- 
+  -- Submitted by: Luiz Canedo and Giulia Culoma
+  -- Student IDs: x22117601 and x21248532
+  --
+  -- Tested using Google Chrome.
+  -- -----------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes | GYMPROJECT</title>
+    <meta name="description" content="GYMPROJECT website" />
+    <meta name="keywords" content="Gym" />
+    <meta name="author" content="Luiz Canedo and Giulia Culoma" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/classes-page.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- SweetAlert -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top navigation bar -->
+      <div id="topbar" class="topbar-wrapper">
+        <div class="topbar container">
+          <!-- Logo -->
+          <div class="topbar__logo-wrapper">
+            <a class="topbar__logo" href="./">
+              <img
+                src="./images/logo.svg"
+                width="168"
+                height="24"
+                alt="GYMPROJECT logo"
+              />
+            </a>
+          </div>
+
+          <!-- Topbar navigation menu -->
+          <nav class="show-laptop-up">
+            <ul class="topbar__navbar">
+              <li class="topbar__navbar__item">
+                <a class="topbar__navbar__link" href="./">Home</a>
+              </li>
+              <li class="topbar__navbar__item">
+                <a class="topbar__navbar__link" href="./classes.html"
+                  >Classes</a
+                >
+              </li>
+              <li class="topbar__navbar__item">
+                <a class="topbar__navbar__link" href="./timetable.html"
+                  >Timetable</a
+                >
+              </li>
+              <li class="topbar__navbar__item">
+                <a
+                  class="topbar__navbar__button button button--primary button--small"
+                  href="./contact.html"
+                >
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Open drawer, only shows on laptop screen size and up -->
+          <div
+            class="topbar__menu-button drawer-switch button-icon hide-laptop-up"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Only shows on laptop screen size and up -->
+    <aside class="hide-laptop-up">
+      <!-- Side navigation drawer -->
+      <div id="drawer" class="drawer-wrapper">
+        <div class="drawer">
+          <!-- Drawer header -->
+          <div class="drawer__header">
+            <!-- Logo -->
+            <div class="drawer__header__logo-wrapper">
+              <a class="drawer__header__logo" href="./">
+                <img
+                  src="./images/logo.svg"
+                  width="168"
+                  height="24"
+                  alt="GYMPROJECT logo"
+                />
+              </a>
+            </div>
+
+            <!-- Close drawer, only shows on laptop screen size and up -->
+            <div class="drawer__close-button drawer-switch button-icon">
+              <span class="material-symbols-outlined">close</span>
+            </div>
+          </div>
+
+          <!-- Drawer navigation menu -->
+          <nav>
+            <ul class="drawer__sidenav">
+              <li class="drawer__sidenav__item">
+                <a class="drawer__sidenav__link" href="./">Home</a>
+              </li>
+              <li class="drawer__sidenav__item">
+                <a class="drawer__sidenav__link" href="./classes.html"
+                  >Classes</a
+                >
+              </li>
+              <li class="drawer__sidenav__item">
+                <a class="drawer__sidenav__link" href="./timetable.html"
+                  >Timetable</a
+                >
+              </li>
+              <li class="drawer__sidenav__item">
+                <a
+                  class="drawer__sidenav__button button button--primary button--large button--full-width"
+                  href="./contact.html"
+                >
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Drawer backdrop, block user clicks until the drawer is closed. -->
+      <div id="drawer-backdrop" class="drawer-backdrop drawer-switch"></div>
+    </aside>
+
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Main -->
+      <main>
+        <div class="main-wrapper">
+          <div class="section-wrapper">
+            <div class="section-content container">
+              <!-- Class car wrapper -->
+              <div class="class-card-wrapper">
+                <!-- Class card 1 -->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/spinning-class.jpeg"
+                      alt="Spinning class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Spinning</h2>
+                    <p class="class-card__description">
+                      This kind of fitness class uses a unique exercise bike
+                      called the spin bike. They are designed like outdoor
+                      bicycles but allow for various movements that may not be
+                      possible when travelling down a bike lane or trail. Using
+                      upbeat music, motivational coaches, and the occasional
+                      interestingly lit room, the spinning class will bring joy
+                      to your workout. Most spin classes last between 40 and 60
+                      minutes.
+                    </p>
+                  </div>
+                </div>
+                <!-- Class card 2 -->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/functional-class.jpg"
+                      alt="Functional training class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Functional Training</h2>
+                    <p class="class-card__description">
+                      Functional Training is a form of exercise that conditions
+                      our body through strength, agility and stability
+                      movements. It typically uses bodyweight or free weights,
+                      rather than machines, as functional exercises involve
+                      using multiple joints and moving in multiple planes, from
+                      side to side and rotationally. A compound exercises, like
+                      a squat, is an example of it. These last, train multiple
+                      muscle groups at the same time = good for helping your
+                      body function as a whole.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 3-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/flexibility-class.jpg"
+                      alt="Flexibility class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Flexibility</h2>
+                    <p class="class-card__description">
+                      Whether you wish to improve your flexibility for dance,
+                      sporting activities, or general fitness and well-being,
+                      our Flexibility classes will help you strengthen your
+                      muscles and increase your range of movement. Using a
+                      variety of dance styles to improve form and strengthen
+                      muscle tone, our training covers a range of techniques to
+                      help you stretch effectively, improve your posture and
+                      alignment, and achieve greater overall flexibility in your
+                      body.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 4-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/fitbox-class.jpg"
+                      alt="Fit-Box class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Fit-Box</h2>
+                    <p class="class-card__description">
+                      This heart-pumping workout routine not only burns a lot of
+                      calories but also helps you to achieve the recommended two
+                      and a half hours of aerobic exercise that you should be
+                      doing on a weekly basis. With fitness boxing, you’ll also
+                      reap strength-training however this is dependent on the
+                      specific routine that you perform. Fitness boxing workouts
+                      can be done with or without a bag. In addition, they can
+                      also incorporate free weights as well as other equipment.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 5-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/hiit-class.jpg"
+                      alt="HIIT class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">HIIT</h2>
+                    <p class="class-card__description">
+                      High-intensity interval training (HIIT) workouts are a
+                      popular kind of exercise that involve exerting your
+                      maximum energy during short periods of time. It requires
+                      you bursts of high-intensity strength and cardio exercises
+                      followed by brief periods of recovery. The magic of a HIIT
+                      workout, is that it will always be considered cardio due
+                      to the speed of exercise. Even if you spend your HIIT
+                      intervals with weights you’re still moving fast enough to
+                      engage in cardio.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 6-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/bikerowski-class.jpg"
+                      alt="BikeRowSki class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">BikeRowSki</h2>
+                    <p class="class-card__description">
+                      BikeRowSki incorporates spinning, rowing and skiing
+                      machines in a “one of a kind” heated fitness studio.
+                      Clients’ heart rates are monitored on a TV using optical
+                      heart rate monitors. This means real-time advice so you
+                      can get the best from your session. It also makes it a
+                      very competitive class because you can see your heart rate
+                      and calories burnt on the screen in front of you.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 7-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/yoga-class.jpeg"
+                      alt="Yoga class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Yoga</h2>
+                    <p class="class-card__description">
+                      Yoga is an ancient practice, rooted in Indian philosophy.
+                      It began as a spiritual practice but has become popular
+                      for promoting physical and mental well-being. Yoga also
+                      includes other elements, yoga as practiced typically
+                      emphasizes physical postures, breathing techniques, and
+                      meditation. The benefits of yoga are in several aspects of
+                      wellness, including stress management, mental/emotional
+                      health, promoting healthy eating/activity habits, sleep,
+                      and balance.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 8-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/bodypump-class.jpeg"
+                      alt="Body pump class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Body Pump</h2>
+                    <p class="class-card__description">
+                      BodyPump is a resistance workout that uses a barbell with
+                      light weights and high reps. Exercises (usually about 6)
+                      are done to fast paced music. You can expect to burn
+                      around 500 during a 50 minute pump class. It is a fun
+                      class to help you burn calories, lose weight and build
+                      muscle. As you build muscle, you'll increase your
+                      metabolism, which can help you to burn calories after the
+                      class has ended.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 9-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/pilates-class.jpg"
+                      alt="Pilates class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Pilates</h2>
+                    <p class="class-card__description">
+                      Pilates Class is a holistic form of exercise, which
+                      focuses on balance, posture, strength and mobility helping
+                      to support clients to feel more aligned, less stressed and
+                      reset. Anyone who has done Pilates knows that the core
+                      strengthening the practice offers is incredible. All
+                      Pilates exercises start with alignment, breath and the
+                      core ensuring that when you make any movement you are
+                      keeping your powerhouse strong.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 10-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/fitdance-class.jpg"
+                      alt="Fit dance class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Fit Dance</h2>
+                    <p class="class-card__description">
+                      Dance Fit is a fitness class with a dance element using
+                      easy to follow routines to up to date chart music. It is a
+                      fun, high intensity body workout incorporating dance
+                      moves. The key to burning calories is moving the whole
+                      body which is why dance is so effective as your doing just
+                      that. The aim of the class is to turn exercise from a
+                      chore into something to look forward to. Does it matter if
+                      you end up on the wrong foot or go the wrong way? NO! Just
+                      keep moving.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 11-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/bodyblitz-class.jpg"
+                      alt="Body blitz class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Body Blitz</h2>
+                    <p class="class-card__description">
+                      Body Blitz combines high and low impact moves, toning and
+                      stretching. There is a friendly, non-competitive
+                      atmosphere. These classes are attended by people of all
+                      shapes sizes and abilities and everyone enjoys themselves.
+                      Are designed to give an all over full body toning
+                      combining resistance and cardio exercise.
+                    </p>
+                  </div>
+                </div>
+                <!--Class card 12-->
+                <div class="class-card">
+                  <div class="class-card__image">
+                    <img
+                      src="./images/classes-page/coreblaster-class.jpg"
+                      alt="Core blaster class"
+                    />
+                  </div>
+                  <div class="class-card__content">
+                    <h2 class="class-card__title">Core Blaster</h2>
+                    <p class="class-card__description">
+                      A scientific core workout for incredible core tone and
+                      sports performance. You will build strength, stability and
+                      endurance in the muscles that support your core, improve
+                      balance, assist injury prevention, and become better at
+                      everything you do during the workout, trained Instructors
+                      guide you through correct technique as you work with
+                      resistance tubes and weight plates, as well as bodyweight
+                      exercises like crunches, and hovers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!--Footer -->
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-content container">
+            <div class="footer-columns">
+              <!-- Logo -->
+              <div class="footer__logo-wrapper">
+                <a class="footer__logo" href="./">
+                  <img
+                    src="./images/logo-light.svg"
+                    width="168"
+                    height="24"
+                    alt="GYMPROJECT logo"
+                  />
+                </a>
+              </div>
+
+              <!-- Footer information -->
+              <div class="footer-info">
+                <span>&copy;2022 GYMPROJECT</span>
+
+                <!-- Footer navigation menu -->
+                <nav>
+                  <ul class="footer__nav">
+                    <li class="footer__nav__item">
+                      <a
+                        class="footer__nav__link fake-link"
+                        href="./terms.html"
+                      >
+                        Terms
+                      </a>
+                    </li>
+                    <li class="footer__nav__item">
+                      <a
+                        class="footer__nav__link fake-link"
+                        href="./privacy.html"
+                      >
+                        Privacy
+                      </a>
+                    </li>
+                    <li class="footer__nav__item">
+                      <a
+                        class="footer__nav__link fake-link"
+                        href="./cookies.html"
+                      >
+                        Cookies
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Main JavaScript file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
