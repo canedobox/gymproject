@@ -28,6 +28,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/timetable.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,10 +70,14 @@
                 <a class="topbar__navbar__link" href="./">Home</a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./classes.html">Classes</a>
+                <a class="topbar__navbar__link" href="./classes.html">
+                  Classes
+                </a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./timetable.html">Timetable</a>
+                <a class="topbar__navbar__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="topbar__navbar__item">
                 <a
@@ -127,10 +132,14 @@
                 <a class="drawer__sidenav__link" href="./">Home</a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./classes.html">Classes</a>
+                <a class="drawer__sidenav__link" href="./classes.html">
+                  Classes
+                </a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./timetable.html">Timetable</a>
+                <a class="drawer__sidenav__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="drawer__sidenav__item">
                 <a
@@ -155,7 +164,472 @@
       <main>
         <div class="main-wrapper">
           <div class="section-wrapper">
-            <div class="section-content container">TIMETABLE PAGE</div>
+            <div class="section-content container">
+              <!-- Timetable -->
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <!-- Timetable header -->
+                  <thead class="timetable__head">
+                    <tr class="timetable__row">
+                      <th class="timetable__header">Time</th>
+                      <th class="timetable__header">Monday</th>
+                      <th class="timetable__header">Tuesday</th>
+                      <th class="timetable__header">Wednesday</th>
+                      <th class="timetable__header">Thursday</th>
+                      <th class="timetable__header">Friday</th>
+                      <th class="timetable__header">Saturday</th>
+                    </tr>
+                  </thead>
+                  <!-- Timetable body -->
+                  <tbody class="timetable__body">
+                    <!-- Row 1 - 7am -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">7am</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">7am-8am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class yoga-class"
+                          >Yoga</span
+                        >
+                        <div class="timetable__data__time">7am-8am</div>
+                        <div class="timetable__data__instructor">Chris</div>
+                      </td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">7am-8am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class yoga-class"
+                          >Yoga</span
+                        >
+                        <div class="timetable__data__time">7am-8am</div>
+                        <div class="timetable__data__instructor">Chris</div>
+                      </td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">7am-8am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class yoga-class"
+                          >Yoga</span
+                        >
+                        <div class="timetable__data__time">7am-8am</div>
+                        <div class="timetable__data__instructor">Chris</div>
+                      </td>
+                    </tr>
+                    <!-- Row 2 - 8am -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">8am</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class functional-class">
+                          Functional Training
+                        </span>
+                        <div class="timetable__data__time">8am-9am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class functional-class">
+                          Functional Training
+                        </span>
+                        <div class="timetable__data__time">8am-9am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class functional-class">
+                          Functional Training
+                        </span>
+                        <div class="timetable__data__time">8am-9am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 3 - 9am -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">9am</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">9am-10am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">9am-10am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">9am-10am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">9am-10am</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                    </tr>
+                    <!-- Row 4 - 10am -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">10am</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class flexibility-class">
+                          Flexibility
+                        </span>
+                        <div class="timetable__data__time">10am-11am</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class flexibility-class">
+                          Flexibility
+                        </span>
+                        <div class="timetable__data__time">10am-11am</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class flexibility-class">
+                          Flexibility
+                        </span>
+                        <div class="timetable__data__time">10am-11am</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class flexibility-class">
+                          Flexibility
+                        </span>
+                        <div class="timetable__data__time">10am-11am</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                    </tr>
+                    <!-- Row 5 - 11am -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">11am</td>
+                      <!-- Monday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class body-pump-class">
+                          Body Pump
+                        </span>
+                        <div class="timetable__data__time">11am-12pm</div>
+                        <div class="timetable__data__instructor">John</div>
+                      </td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Thursday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class body-pump-class">
+                          Body Pump
+                        </span>
+                        <div class="timetable__data__time">11am-12pm</div>
+                        <div class="timetable__data__instructor">John</div>
+                      </td>
+                      <!-- Friday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Saturday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class body-blitz-class">
+                          Body Blitz
+                        </span>
+                        <div class="timetable__data__time">11am-12pm</div>
+                        <div class="timetable__data__instructor">John</div>
+                      </td>
+                    </tr>
+                    <!-- Row 6 - 12pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">12pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class fit-box-class">
+                          Fit-Box
+                        </span>
+                        <div class="timetable__data__time">12pm-1pm</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class pilates-class">
+                          Pilates
+                        </span>
+                        <div class="timetable__data__time">12pm-1pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class fit-box-class">
+                          Fit-Box
+                        </span>
+                        <div class="timetable__data__time">12pm-1pm</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class pilates-class">
+                          Pilates
+                        </span>
+                        <div class="timetable__data__time">12pm-1pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class fit-box-class">
+                          Fit-Box
+                        </span>
+                        <div class="timetable__data__time">12pm-1pm</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 7 - 1pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">1pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class hiit-class">
+                          HIIT
+                        </span>
+                        <div class="timetable__data__time">1pm-2pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class core-blaster-class">
+                          Core Blaster
+                        </span>
+                        <div class="timetable__data__time">1pm-2pm</div>
+                        <div class="timetable__data__instructor">John</div>
+                      </td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class hiit-class">
+                          HIIT
+                        </span>
+                        <div class="timetable__data__time">1pm-2pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class core-blaster-class">
+                          Core Blaster
+                        </span>
+                        <div class="timetable__data__time">1pm-2pm</div>
+                        <div class="timetable__data__instructor">John</div>
+                      </td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class hiit-class">
+                          HIIT
+                        </span>
+                        <div class="timetable__data__time">1pm-2pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 8 - 2pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">2pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Thursday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Friday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 9 - 3pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">3pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Thursday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Friday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 10 - 4pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">4pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class bikerowski-class">
+                          BikeRowski
+                        </span>
+                        <div class="timetable__data__time">4pm-5pm</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class pilates-class">
+                          Pilates
+                        </span>
+                        <div class="timetable__data__time">4pm-5pm</div>
+                        <div class="timetable__data__instructor">Chris</div>
+                      </td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class bikerowski-class">
+                          BikeRowski
+                        </span>
+                        <div class="timetable__data__time">4pm-5pm</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class pilates-class">
+                          Pilates
+                        </span>
+                        <div class="timetable__data__time">4pm-5pm</div>
+                        <div class="timetable__data__instructor">Chris</div>
+                      </td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class bikerowski-class">
+                          BikeRowski
+                        </span>
+                        <div class="timetable__data__time">4pm-5pm</div>
+                        <div class="timetable__data__instructor">Colm</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 11 - 5pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">5pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">5pm-6pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">5pm-6pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Thursday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Friday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class spinning-class">
+                          Spinning
+                        </span>
+                        <div class="timetable__data__time">5pm-6pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                    <!-- Row 12 - 6pm -->
+                    <tr class="timetable__row">
+                      <!-- Time -->
+                      <td class="timetable__data timetable__time">5pm</td>
+                      <!-- Monday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Tuesday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class fit-dance-class">
+                          Fit Dance
+                        </span>
+                        <div class="timetable__data__time">6pm-7pm</div>
+                        <div class="timetable__data__instructor">John</div>
+                      </td>
+                      <!-- Wednesday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Thursday -->
+                      <td class="timetable__data">
+                        <span class="timetable__data__class fit-dance-class">
+                          Fit Dance
+                        </span>
+                        <div class="timetable__data__time">6pm-7pm</div>
+                        <div class="timetable__data__instructor">Giulia</div>
+                      </td>
+                      <!-- Friday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                      <!-- Saturday -->
+                      <td class="timetable__data timetable__data--empty"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </main>

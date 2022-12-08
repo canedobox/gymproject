@@ -14,6 +14,10 @@
   -- -----------------------------------------------------
 */
 
+/***********************************************************************
+***                            CLASS CARD                            ***
+***********************************************************************/
+
 .class-card-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +27,7 @@
 }
 
 .class-card {
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
@@ -68,11 +72,11 @@
   .class-card-wrapper {
     gap: var(--padding-desktop);
   }
-  
+
   .class-card {
     max-width: 400px;
   }
-  
+
   .class-card__content {
     gap: var(--padding-desktop);
     padding: var(--padding-desktop);
