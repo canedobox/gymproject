@@ -448,6 +448,29 @@ body.modal {
   padding-top: var(--topbar-height-default);
 }
 
+.section__header {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--padding-default) / 2);
+  padding: var(--padding-default);
+  padding-top: calc(var(--padding-default) * 3);
+  width: 100%;
+}
+
+.section__header__title {
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0;
+}
+
+.section__header__subtitle {
+  font-weight: 500;
+  color: var(--color-gray-600);
+}
+
 .section-content {
   padding: var(--padding-default);
 }
@@ -628,6 +651,12 @@ body.modal {
 
   .section-wrapper:first-child {
     padding-top: var(--topbar-height-desktop);
+  }
+
+  .section__header {
+    gap: calc(var(--padding-desktop) / 2);
+    padding: var(--padding-desktop);
+    padding-top: calc(var(--padding-desktop) * 3);
   }
 
   .section-content {
