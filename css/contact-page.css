@@ -1,8 +1,3 @@
-body {
-  background: #f7f7f7;
-  margin-top: 2rem;
-}
-
 .contact-form-box {
   max-width: 500px;
   margin: auto;
@@ -20,6 +15,7 @@ body {
 
 label {
   font-weight: bold;
+  display: inline-block;
 }
 
 .form-group {
@@ -36,9 +32,20 @@ textarea {
   height: 100px;
 }
 
+input {
+  overflow: visible;
+}
+
+select {
+  text-transform: none;
+  word-wrap: normal;
+}
+
 input,
-textarea {
+textarea,
+select {
   width: 100%;
+  margin: 0;
 }
 
 .contact-btn {
@@ -48,4 +55,44 @@ textarea {
   color: white;
   font-weight: bold;
   border-color: white;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-image: url('../images/form-select.svg');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
