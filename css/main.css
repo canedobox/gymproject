@@ -75,6 +75,7 @@
   --icon-border-radius: 25%;
 
   /* button */
+  --button-wrapper-min-width: 260px;
   --button-height-small: 40px;
   --button-height-medium: 50px;
   --button-height-large: 60px;
@@ -150,17 +151,24 @@ body.modal {
 ***                             BUTTONS                              ***
 ***********************************************************************/
 
+.button-wrapper {
+  display: inline-block;
+  min-width: var(--button-wrapper-min-width);
+}
+
 .button {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  border: none;
+  border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 var(--padding-default);
   height: var(--button-height-medium);
-  border-radius: var(--border-radius);
   cursor: pointer;
   user-select: none;
+  outline: none;
 }
 
 .button--small {
@@ -441,11 +449,14 @@ body.modal {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: calc(var(--padding-default) * 2) 0;
   width: 100%;
 }
 
 .section-wrapper:first-child {
-  padding-top: var(--topbar-height-default);
+  padding-top: calc(
+    (var(--padding-default) * 2) + var(--topbar-height-default)
+  );
 }
 
 .section__header {
@@ -455,9 +466,8 @@ body.modal {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: calc(var(--padding-default) / 2);
   padding: var(--padding-default);
-  padding-top: calc(var(--padding-default) * 3);
+  gap: calc(var(--padding-default) / 2);
   width: 100%;
 }
 
@@ -554,26 +564,6 @@ body.modal {
 }
 
 /***********************************************************************
-***                             HOMEPAGE                             ***
-***********************************************************************/
-
-.homepage__hero-image {
-  z-index: var(--zindex-back);
-  background-image: url('../images/hero-image.webp');
-  background-color: var(--color-gray-200);
-  background-size: cover;
-  background-position: 70% 50%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50vh;
-  overflow: hidden;
-}
-
-/***********************************************************************
 ***                             TABLETS                              ***
 ***********************************************************************/
 
@@ -649,14 +639,19 @@ body.modal {
     height: var(--topbar-height-desktop);
   }
 
+  .section-wrapper {
+    padding: calc(var(--padding-desktop) * 2) 0;
+  }
+
   .section-wrapper:first-child {
-    padding-top: var(--topbar-height-desktop);
+    padding-top: calc(
+      (var(--padding-desktop) * 2) + var(--topbar-height-desktop)
+    );
   }
 
   .section__header {
-    gap: calc(var(--padding-desktop) / 2);
     padding: var(--padding-desktop);
-    padding-top: calc(var(--padding-desktop) * 3);
+    gap: calc(var(--padding-desktop) / 2);
   }
 
   .section-content {
@@ -673,10 +668,6 @@ body.modal {
 
   .footer__nav__link {
     padding: 0 calc(var(--padding-desktop) / 2);
-  }
-
-  .homepage__hero-image {
-    background-position: 50%;
   }
 }
 
