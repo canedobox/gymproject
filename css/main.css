@@ -454,6 +454,7 @@ body.modal {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: calc(var(--padding-default) / 2);
   padding: var(--padding-default);
   padding-top: calc(var(--padding-default) * 3);
@@ -467,7 +468,6 @@ body.modal {
 }
 
 .section__header__subtitle {
-  font-weight: 500;
   color: var(--color-gray-600);
 }
 
@@ -699,5 +699,10 @@ body.modal {
 
   .topbar__navbar__button {
     margin-left: var(--padding-desktop);
+  }
+
+  .section__header {
+    padding-left: calc(var(--padding-desktop) * 8);
+    padding-right: calc(var(--padding-desktop) * 8);
   }
 }
