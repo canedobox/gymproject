@@ -282,6 +282,12 @@ body.modal {
   background-color: var(--color-gray-100);
 }
 
+.topbar__navbar__link.current-page {
+  color: var(--color-primary-500) !important;
+  background-color: transparent !important;
+  cursor: default;
+}
+
 .topbar__navbar__button {
   margin-left: calc(var(--padding-default) / 2);
 }
@@ -379,6 +385,12 @@ body.modal {
 
 .drawer__sidenav__link:hover {
   background-color: var(--color-gray-100);
+}
+
+.drawer__sidenav__link.current-page {
+  color: var(--color-primary-500) !important;
+  background-color: transparent !important;
+  cursor: default;
 }
 
 .drawer__sidenav__button {
