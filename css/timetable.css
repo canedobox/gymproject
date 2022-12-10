@@ -144,19 +144,19 @@
 
 @media only screen and (min-width: 768px) {
   .timetable__header {
-    padding: var(--padding-desktop);
+    padding: var(--padding-laptop);
   }
 
   .timetable__data {
-    padding: calc(var(--padding-desktop) / 2);
+    padding: calc(var(--padding-laptop) / 2);
   }
 
   .timetable__data__class {
-    padding: calc(var(--padding-desktop) / 4) calc(var(--padding-desktop) / 2);
-    margin-bottom: calc(var(--padding-desktop) / 2);
+    padding: calc(var(--padding-laptop) / 4) calc(var(--padding-laptop) / 2);
+    margin-bottom: calc(var(--padding-laptop) / 2);
   }
 
   .timetable__data__time {
-    margin-bottom: calc(var(--padding-desktop) / 2);
+    margin-bottom: calc(var(--padding-laptop) / 2);
   }
 }

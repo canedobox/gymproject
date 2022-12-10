@@ -70,7 +70,7 @@
 
 @media only screen and (min-width: 768px) {
   .class-card-wrapper {
-    gap: var(--padding-desktop);
+    gap: var(--padding-laptop);
   }
 
   .class-card {
@@ -78,7 +78,7 @@
   }
 
   .class-card__content {
-    gap: var(--padding-desktop);
-    padding: var(--padding-desktop);
+    gap: var(--padding-laptop);
+    padding: var(--padding-laptop);
   }
 }

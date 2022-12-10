@@ -109,12 +109,12 @@
   }
 
   .class-card-wrapper {
-    gap: var(--padding-desktop);
+    gap: var(--padding-laptop);
   }
 
   .class-card__content {
-    gap: var(--padding-desktop);
-    padding: calc(var(--padding-desktop) / 2);
+    gap: var(--padding-laptop);
+    padding: calc(var(--padding-laptop) / 2);
   }
 }
 

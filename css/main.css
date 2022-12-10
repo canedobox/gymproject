@@ -23,9 +23,6 @@
   --color-primary-300: #a471f7;
   --color-primary-500: #6610f2;
   --color-primary-700: #3d0894;
-  --color-secondary-300: #62ccfc;
-  --color-secondary-500: #04a9f4;
-  --color-secondary-700: #026390;
   --color-accent-200: #ff4081;
   --color-white: #ffffff;
   --color-gray-50: #f5f5f5;
@@ -42,8 +39,6 @@
   --color-error-50: #fff7f7;
   --color-error-500: #ff3030;
   --color-error-700: #840000;
-  --color-warning: #ffc800;
-  --color-success: #00b888;
 
   /* z-index */
   --zindex-drawer: 120;
@@ -58,11 +53,7 @@
 
   /* padding */
   --padding-default: 16px;
-  --padding-desktop: 20px;
-
-  /* gap */
-  --gap-small: 10px;
-  --gap-large: 20px;
+  --padding-laptop: 20px;
 
   /* container */
   --container-min-width: 360px;
@@ -84,7 +75,7 @@
 
   /* topbar */
   --topbar-height-default: 56px;
-  --topbar-height-desktop: 64px;
+  --topbar-height-laptop: 64px;
 
   /* drawer */
   --drawer-max-width: 300px;
@@ -511,7 +502,7 @@ body.modal {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: var(--gap-large);
+  gap: var(--padding-default);
 }
 
 .footer__logo-wrapper {
@@ -601,75 +592,79 @@ body.modal {
   }
 
   .button {
-    padding: 0 var(--padding-desktop);
+    padding: 0 var(--padding-laptop);
     height: var(--button-height-large);
   }
 
   .button-icon {
-    padding: calc(var(--padding-desktop) / 2);
+    padding: calc(var(--padding-laptop) / 2);
   }
 
   .topbar {
-    padding: 0 var(--padding-desktop);
-    height: var(--topbar-height-desktop);
+    padding: 0 var(--padding-laptop);
+    height: var(--topbar-height-laptop);
   }
 
   .topbar__menu-button {
-    right: calc(calc(var(--padding-desktop) / 2) * -1);
+    right: calc(calc(var(--padding-laptop) / 2) * -1);
   }
 
   .topbar__navbar__link {
-    padding: 0 calc(var(--padding-desktop) / 2);
-    height: var(--topbar-height-desktop);
+    padding: 0 calc(var(--padding-laptop) / 2);
+    height: var(--topbar-height-laptop);
   }
 
   .topbar__navbar__button {
-    margin-left: calc(var(--padding-desktop) / 2);
+    margin-left: calc(var(--padding-laptop) / 2);
   }
 
   .drawer__header {
-    padding: 0 var(--padding-desktop);
-    height: var(--topbar-height-desktop);
+    padding: 0 var(--padding-laptop);
+    height: var(--topbar-height-laptop);
   }
 
   .drawer__close-button {
-    right: calc(calc(var(--padding-desktop) / 2) * -1);
+    right: calc(calc(var(--padding-laptop) / 2) * -1);
   }
 
   .drawer__sidenav__link {
-    padding: 0 var(--padding-desktop);
-    height: var(--topbar-height-desktop);
+    padding: 0 var(--padding-laptop);
+    height: var(--topbar-height-laptop);
   }
 
   .section-wrapper {
-    padding: calc(var(--padding-desktop) * 2) 0;
+    padding: calc(var(--padding-laptop) * 2) 0;
   }
 
   .section-wrapper:first-child {
     padding-top: calc(
-      (var(--padding-desktop) * 2) + var(--topbar-height-desktop)
+      (var(--padding-laptop) * 2) + var(--topbar-height-laptop)
     );
   }
 
   .section__header {
-    padding: var(--padding-desktop);
-    gap: calc(var(--padding-desktop) / 2);
+    padding: var(--padding-laptop);
+    gap: calc(var(--padding-laptop) / 2);
   }
 
   .section-content {
-    padding: var(--padding-desktop);
+    padding: var(--padding-laptop);
   }
 
   .footer-content {
-    padding: var(--padding-desktop);
+    padding: var(--padding-laptop);
+  }
+
+  .footer-columns {
+    gap: var(--padding-laptop);
   }
 
   .footer-info {
-    gap: calc(var(--padding-desktop) / 2);
+    gap: calc(var(--padding-laptop) / 2);
   }
 
   .footer__nav__link {
-    padding: 0 calc(var(--padding-desktop) / 2);
+    padding: 0 calc(var(--padding-laptop) / 2);
   }
 }
 
@@ -687,15 +682,15 @@ body.modal {
   }
 
   .topbar__navbar__link {
-    padding: 0 var(--padding-desktop);
+    padding: 0 var(--padding-laptop);
   }
 
   .topbar__navbar__button {
-    margin-left: var(--padding-desktop);
+    margin-left: var(--padding-laptop);
   }
 
   .section__header {
-    padding-left: calc(var(--padding-desktop) * 8);
-    padding-right: calc(var(--padding-desktop) * 8);
+    padding-left: calc(var(--padding-laptop) * 8);
+    padding-right: calc(var(--padding-laptop) * 8);
   }
 }

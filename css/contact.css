@@ -98,23 +98,23 @@ select {
 
 @media only screen and (min-width: 768px) {
   .contact-form-box {
-    padding: calc(var(--padding-desktop) * 2);
-    row-gap: var(--padding-desktop);
+    padding: calc(var(--padding-laptop) * 2);
+    row-gap: var(--padding-laptop);
   }
 
   .form-group {
-    gap: calc(var(--padding-desktop) / 2);
+    gap: calc(var(--padding-laptop) / 2);
   }
 
   .form-control {
-    padding: calc(var(--padding-desktop) * 0.5);
+    padding: calc(var(--padding-laptop) * 0.5);
   }
 
   .form-select {
-    padding: calc(var(--padding-desktop) * 0.5);
+    padding: calc(var(--padding-laptop) * 0.5);
   }
 
   #validation-message {
-    padding: calc(var(--padding-desktop) / 2);
+    padding: calc(var(--padding-laptop) / 2);
   }
 }
