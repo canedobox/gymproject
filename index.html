@@ -28,6 +28,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,11 +38,6 @@
     />
     <!-- jQuery -->
     <script src="./js/jquery-3.6.1.min.js"></script>
-    <!-- SweetAlert -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"
-      defer
-    ></script>
   </head>
 
   <body>
@@ -66,13 +62,19 @@
           <nav class="show-laptop-up">
             <ul class="topbar__navbar">
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./">Home</a>
+                <a class="topbar__navbar__link current-page" href="./">
+                  Home
+                </a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./classes.html">Classes</a>
+                <a class="topbar__navbar__link" href="./classes.html">
+                  Classes
+                </a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./timetable.html">Timetable</a>
+                <a class="topbar__navbar__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="topbar__navbar__item">
                 <a
@@ -124,13 +126,19 @@
           <nav>
             <ul class="drawer__sidenav">
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./">Home</a>
+                <a class="drawer__sidenav__link current-page" href="./">
+                  Home
+                </a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./classes.html">Classes</a>
+                <a class="drawer__sidenav__link" href="./classes.html">
+                  Classes
+                </a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./timetable.html">Timetable</a>
+                <a class="drawer__sidenav__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="drawer__sidenav__item">
                 <a
@@ -156,11 +164,261 @@
         <div class="main-wrapper">
           <!-- Homepage hero image section -->
           <div class="homepage__hero-image section-wrapper">
-            <div class="section-content container"></div>
+            <div class="homepage__hero-image__title">
+              <h1>WELCOME TO GYMPROJECT</h1>
+            </div>
           </div>
 
-          <div class="section-wrapper">
-            <div class="section-content container"></div>
+          <!-- About section -->
+          <div class="about-section section-wrapper">
+            <!-- Section Header -->
+            <div class="section__header container">
+              <h1 class="section__header__title">We are specialist in YOU</h1>
+              <p class="section__header__subtitle">
+                Our modern club is more the just a gym. With our excellent
+                equipment, we offer dedicated training areas , exciting boutique
+                classes and versatile equipment for all fitness levels. So
+                whether you're new to exercise or training for something
+                specific, our transformations plan will allow you to achieve so
+                much more in the gym. In addition to it, we also offer Sport and
+                relaxing massages session, aimed at all kinds of athletes from
+                the weekend jogger to world-beating professionals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Classes section -->
+          <div class="classes-section section-wrapper">
+            <!-- Section Header -->
+            <div class="section__header container">
+              <h1 class="section__header__title">Check out our classes</h1>
+            </div>
+
+            <!-- Section Content -->
+            <div class="section-content container">
+              <!-- Class car wrapper -->
+              <div class="class-card-wrapper">
+                <!-- Class card 1 -->
+                <div class="class-card">
+                  <a
+                    href="classes.html#spinning"
+                    title="Learn more about our Spinning class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/spinning-class.jpeg"
+                        alt="Spinning class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Spinning</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- Class card 2 -->
+                <div class="class-card">
+                  <a
+                    href="classes.html#functional"
+                    title="Learn more about our Functional Training class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/functional-class.jpg"
+                        alt="Functional training class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Functional Training</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 3-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#flexibility"
+                    title="Learn more about our Flexibility class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/flexibility-class.jpg"
+                        alt="Flexibility class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Flexibility</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 4-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#fit-box"
+                    title="Learn more about our Fit-Box class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/fit-box-class.jpg"
+                        alt="Fit-Box class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Fit-Box</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 5-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#hiit"
+                    title="Learn more about our HIIT class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/hiit-class.jpg"
+                        alt="HIIT class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">HIIT</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 6-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#bikerowski"
+                    title="Learn more about our  class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/bikerowski-class.jpg"
+                        alt="BikeRowSki class"
+                      />
+                    </div>
+                    <div
+                      class="class-card__content"
+                      title="Learn more about our BikeRowSki class"
+                    >
+                      <span class="class-card__title">BikeRowSki</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 7-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#yoga"
+                    title="Learn more about our Yoga class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/yoga-class.jpeg"
+                        alt="Yoga class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Yoga</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 8-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#body-pump"
+                    title="Learn more about our Body Pump class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/body-pump-class.jpeg"
+                        alt="Body pump class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Body Pump</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 9-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#pilates"
+                    title="Learn more about our Pilates class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/pilates-class.jpg"
+                        alt="Pilates class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Pilates</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 10-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#fit-dance"
+                    title="Learn more about our Fit Dance class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/fit-dance-class.jpg"
+                        alt="Fit dance class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Fit Dance</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 11-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#body-blitz"
+                    title="Learn more about our Body Blitz class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/body-blitz-class.jpg"
+                        alt="Body blitz class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Body Blitz</span>
+                    </div>
+                  </a>
+                </div>
+                <!--Class card 12-->
+                <div class="class-card">
+                  <a
+                    href="classes.html#core-blaster"
+                    title="Learn more about our Core Blaster class"
+                  >
+                    <div class="class-card__image">
+                      <img
+                        src="./images/classes/core-blaster-class.jpg"
+                        alt="Core blaster class"
+                      />
+                    </div>
+                    <div class="class-card__content">
+                      <span class="class-card__title">Core Blaster</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section Content -->
+            <div class="section-content container">
+              <div class="button-wrapper">
+                <a
+                  class="button button--primary button--large"
+                  href="./timetable.html"
+                >
+                  See timetable
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </main>

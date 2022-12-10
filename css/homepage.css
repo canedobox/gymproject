@@ -1,0 +1,129 @@
+/*
+  -- -----------------------------------------------------
+  -- National College of Ireland
+  -- Higher Diploma in Science in Computing
+  -- 2022/2023
+  --
+  -- Web Design and Client Side Scripting (HDSDEV_SEP)
+  -- Continuous Assessment Project.
+  -- 
+  -- Submitted by: Luiz Canedo and Giulia Culoma
+  -- Student IDs: x22117601 and x21248532
+  --
+  -- Tested using Google Chrome.
+  -- -----------------------------------------------------
+*/
+
+/***********************************************************************
+***                            HERO IMAGE                            ***
+***********************************************************************/
+
+.homepage__hero-image {
+  z-index: var(--zindex-back);
+  background-image: url('../images/hero-image.webp');
+  background-color: var(--color-gray-200);
+  background-size: cover;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.homepage__hero-image__title {
+  text-align: center;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 var(--padding-default);
+  width: 100%;
+}
+
+.about-section {
+  background-color: var(--color-gray-100);
+}
+
+/***********************************************************************
+***                       HOMEPAGE CLASS CARD                        ***
+***********************************************************************/
+
+.class-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--padding-default);
+  width: 100%;
+}
+
+.class-card {
+  background-color: var(--color-gray-900);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.class-card:hover {
+  box-shadow: 0px 8px 10px -1px rgba(255, 64, 129, 0.3),
+    0 2px 4px -1px rgb(0, 0, 0, 0.06);
+}
+
+.class-card > a {
+  text-decoration: none !important;
+}
+
+.class-card__image > img {
+  width: 100%;
+  height: auto;
+}
+
+.class-card__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--padding-default);
+  padding: calc(var(--padding-default) / 2);
+}
+
+.class-card__title {
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+/***********************************************************************
+***                             LAPTOPS                              ***
+***********************************************************************/
+
+@media only screen and (min-width: 768px) {
+  .homepage__hero-image {
+    background-position: 50%;
+  }
+
+  .class-card-wrapper {
+    gap: var(--padding-desktop);
+  }
+
+  .class-card__content {
+    gap: var(--padding-desktop);
+    padding: calc(var(--padding-desktop) / 2);
+  }
+}
+
+/***********************************************************************
+***                             DESKTOPS                             ***
+***********************************************************************/
+
+@media only screen and (min-width: 1024px) {
+  .class-card {
+    max-width: 220px;
+  }
+}

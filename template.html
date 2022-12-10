@@ -37,11 +37,6 @@
     />
     <!-- jQuery -->
     <script src="./js/jquery-3.6.1.min.js"></script>
-    <!-- SweetAlert -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"
-      defer
-    ></script>
   </head>
 
   <body>
@@ -66,13 +61,19 @@
           <nav class="show-laptop-up">
             <ul class="topbar__navbar">
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./">Home</a>
+                <a class="topbar__navbar__link current-page" href="./">
+                  Home
+                </a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./classes.html">Classes</a>
+                <a class="topbar__navbar__link" href="./classes.html">
+                  Classes
+                </a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./timetable.html">Timetable</a>
+                <a class="topbar__navbar__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="topbar__navbar__item">
                 <a
@@ -123,14 +124,20 @@
           <!-- Drawer navigation menu -->
           <nav>
             <ul class="drawer__sidenav">
-              <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./">Home</a>
+              <li class="drawer__sidenav__item current-page">
+                <a class="drawer__sidenav__link current-page" href="./">
+                  Home
+                </a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./classes.html">Classes</a>
+                <a class="drawer__sidenav__link" href="./classes.html">
+                  Classes
+                </a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./timetable.html">Timetable</a>
+                <a class="drawer__sidenav__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="drawer__sidenav__item">
                 <a
@@ -154,8 +161,16 @@
       <!-- Main -->
       <main>
         <div class="main-wrapper">
+          <!-- Section -->
           <div class="section-wrapper">
-            <div class="section-content container">TEMPLATE PAGE</div>
+            <!-- Section Header -->
+            <div class="section__header container">
+              <h1 class="section__header__title">Section Title</h1>
+              <p class="section__header__subtitle">Section subtitle</p>
+            </div>
+
+            <!-- Section Content -->
+            <div class="section-content container">Page content goes here</div>
           </div>
         </div>
       </main>

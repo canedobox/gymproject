@@ -28,7 +28,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/classes-page.css" />
+    <link rel="stylesheet" href="./css/classes.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,11 +38,6 @@
     />
     <!-- jQuery -->
     <script src="./js/jquery-3.6.1.min.js"></script>
-    <!-- SweetAlert -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"
-      defer
-    ></script>
   </head>
 
   <body>
@@ -70,14 +65,17 @@
                 <a class="topbar__navbar__link" href="./">Home</a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./classes.html"
-                  >Classes</a
+                <a
+                  class="topbar__navbar__link current-page"
+                  href="./classes.html"
                 >
+                  Classes
+                </a>
               </li>
               <li class="topbar__navbar__item">
-                <a class="topbar__navbar__link" href="./timetable.html"
-                  >Timetable</a
-                >
+                <a class="topbar__navbar__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="topbar__navbar__item">
                 <a
@@ -132,14 +130,17 @@
                 <a class="drawer__sidenav__link" href="./">Home</a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./classes.html"
-                  >Classes</a
+                <a
+                  class="drawer__sidenav__link current-page"
+                  href="./classes.html"
                 >
+                  Classes
+                </a>
               </li>
               <li class="drawer__sidenav__item">
-                <a class="drawer__sidenav__link" href="./timetable.html"
-                  >Timetable</a
-                >
+                <a class="drawer__sidenav__link" href="./timetable.html">
+                  Timetable
+                </a>
               </li>
               <li class="drawer__sidenav__item">
                 <a
@@ -165,13 +166,13 @@
         <div class="main-wrapper">
           <div class="section-wrapper">
             <div class="section-content container">
-              <!-- Class car wrapper -->
+              <!-- Class card wrapper -->
               <div class="class-card-wrapper">
                 <!-- Class card 1 -->
-                <div class="class-card">
+                <div id="spinning" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/spinning-class.jpeg"
+                      src="./images/classes/spinning-class.jpeg"
                       alt="Spinning class"
                     />
                   </div>
@@ -190,10 +191,10 @@
                   </div>
                 </div>
                 <!-- Class card 2 -->
-                <div class="class-card">
+                <div id="functional" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/functional-class.jpg"
+                      src="./images/classes/functional-class.jpg"
                       alt="Functional training class"
                     />
                   </div>
@@ -213,10 +214,10 @@
                   </div>
                 </div>
                 <!--Class card 3-->
-                <div class="class-card">
+                <div id="flexibility" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/flexibility-class.jpg"
+                      src="./images/classes/flexibility-class.jpg"
                       alt="Flexibility class"
                     />
                   </div>
@@ -236,10 +237,10 @@
                   </div>
                 </div>
                 <!--Class card 4-->
-                <div class="class-card">
+                <div id="fit-box" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/fitbox-class.jpg"
+                      src="./images/classes/fit-box-class.jpg"
                       alt="Fit-Box class"
                     />
                   </div>
@@ -258,10 +259,10 @@
                   </div>
                 </div>
                 <!--Class card 5-->
-                <div class="class-card">
+                <div id="hiit" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/hiit-class.jpg"
+                      src="./images/classes/hiit-class.jpg"
                       alt="HIIT class"
                     />
                   </div>
@@ -281,10 +282,10 @@
                   </div>
                 </div>
                 <!--Class card 6-->
-                <div class="class-card">
+                <div id="bikerowski" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/bikerowski-class.jpg"
+                      src="./images/classes/bikerowski-class.jpg"
                       alt="BikeRowSki class"
                     />
                   </div>
@@ -302,10 +303,10 @@
                   </div>
                 </div>
                 <!--Class card 7-->
-                <div class="class-card">
+                <div id="yoga" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/yoga-class.jpeg"
+                      src="./images/classes/yoga-class.jpeg"
                       alt="Yoga class"
                     />
                   </div>
@@ -325,10 +326,10 @@
                   </div>
                 </div>
                 <!--Class card 8-->
-                <div class="class-card">
+                <div id="body-pump" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/bodypump-class.jpeg"
+                      src="./images/classes/body-pump-class.jpeg"
                       alt="Body pump class"
                     />
                   </div>
@@ -347,10 +348,10 @@
                   </div>
                 </div>
                 <!--Class card 9-->
-                <div class="class-card">
+                <div id="pilates" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/pilates-class.jpg"
+                      src="./images/classes/pilates-class.jpg"
                       alt="Pilates class"
                     />
                   </div>
@@ -369,17 +370,17 @@
                   </div>
                 </div>
                 <!--Class card 10-->
-                <div class="class-card">
+                <div id="fit-dance" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/fitdance-class.jpg"
+                      src="./images/classes/fit-dance-class.jpg"
                       alt="Fit dance class"
                     />
                   </div>
                   <div class="class-card__content">
                     <h2 class="class-card__title">Fit Dance</h2>
                     <p class="class-card__description">
-                      Dance Fit is a fitness class with a dance element using
+                      Fit Dance is a fitness class with a dance element using
                       easy to follow routines to up to date chart music. It is a
                       fun, high intensity body workout incorporating dance
                       moves. The key to burning calories is moving the whole
@@ -392,10 +393,10 @@
                   </div>
                 </div>
                 <!--Class card 11-->
-                <div class="class-card">
+                <div id="body-blitz" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/bodyblitz-class.jpg"
+                      src="./images/classes/body-blitz-class.jpg"
                       alt="Body blitz class"
                     />
                   </div>
@@ -412,10 +413,10 @@
                   </div>
                 </div>
                 <!--Class card 12-->
-                <div class="class-card">
+                <div id="core-blaster" class="class-card">
                   <div class="class-card__image">
                     <img
-                      src="./images/classes-page/coreblaster-class.jpg"
+                      src="./images/classes/core-blaster-class.jpg"
                       alt="Core blaster class"
                     />
                   </div>

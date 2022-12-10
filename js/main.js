@@ -52,11 +52,8 @@ $(document).ready(function () {
   $('.fake-link').click(function (event) {
     // Prevent default click behavior.
     event.preventDefault();
-    // Display a SweetAlert message when a fake link is clicked.
-    Swal.fire({
-      icon: 'info',
-      text: '"' + $(this).text().trim() + '" link was clicked!',
-    });
+    // Display an alert message when a fake link is clicked.
+    alert('"' + $(this).text().trim() + '" link was clicked!');
 
     // Log info.
     console.log('"' + $(this).text().trim() + '" link was clicked!');

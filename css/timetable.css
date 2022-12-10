@@ -1,0 +1,162 @@
+/*
+  -- -----------------------------------------------------
+  -- National College of Ireland
+  -- Higher Diploma in Science in Computing
+  -- 2022/2023
+  --
+  -- Web Design and Client Side Scripting (HDSDEV_SEP)
+  -- Continuous Assessment Project.
+  -- 
+  -- Submitted by: Luiz Canedo and Giulia Culoma
+  -- Student IDs: x22117601 and x21248532
+  --
+  -- Tested using Google Chrome.
+  -- -----------------------------------------------------
+*/
+
+/***********************************************************************
+***                            TIMETABLE                             ***
+***********************************************************************/
+
+.timetable-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.timetable {
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.timetable__header {
+  background-color: var(--color-gray-100);
+  border: var(--border-width) solid var(--color-gray-300);
+  border-left: 0;
+  padding: var(--padding-default);
+  text-transform: uppercase !important;
+}
+
+.timetable__header:first-child {
+  border-left: var(--border-width) solid var(--color-gray-300);
+}
+
+.timetable__data {
+  font-weight: 500;
+  background-color: var(--color-white);
+  border: var(--border-width) solid var(--color-gray-300);
+  border-top: 0;
+  border-left: 0;
+  vertical-align: middle;
+  padding: calc(var(--padding-default) / 2);
+}
+
+.timetable__data:first-child {
+  border-left: var(--border-width) solid var(--color-gray-300);
+}
+
+.timetable__data--empty {
+  background-color: var(--color-gray-50);
+}
+
+.timetable__data__class {
+  font-weight: 500;
+  font-size: 0.9em;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  padding: calc(var(--padding-default) / 4) calc(var(--padding-default) / 2);
+  margin-bottom: calc(var(--padding-default) / 2);
+  white-space: nowrap;
+}
+
+.timetable__data__time {
+  font-weight: 500;
+  display: block;
+  margin-bottom: calc(var(--padding-default) / 2);
+  white-space: nowrap;
+}
+
+.timetable__data__instructor {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: var(--color-gray-600);
+  display: block;
+  white-space: nowrap;
+}
+
+/**
+ * The timetable class colors are not defined on the root element as
+ * they won't be reused anywhere else on the website but the timetable.
+ */
+
+.timetable__data__class.bikerowski-class {
+  background-color: #f48fb1;
+}
+
+.timetable__data__class.body-blitz-class {
+  background-color: #ce93d8;
+}
+
+.timetable__data__class.body-pump-class {
+  background-color: #b39ddb;
+}
+
+.timetable__data__class.core-blaster-class {
+  background-color: #9fa8da;
+}
+
+.timetable__data__class.fit-box-class {
+  background-color: #90caf9;
+}
+
+.timetable__data__class.fit-dance-class {
+  background-color: #80deea;
+}
+
+.timetable__data__class.flexibility-class {
+  background-color: #80cbc4;
+}
+
+.timetable__data__class.functional-class {
+  background-color: #a5d6a7;
+}
+
+.timetable__data__class.hiit-class {
+  background-color: #c5e1a5;
+}
+
+.timetable__data__class.pilates-class {
+  background-color: #e6ee9c;
+}
+
+.timetable__data__class.spinning-class {
+  background-color: #ffe082;
+}
+
+.timetable__data__class.yoga-class {
+  background-color: #ffab91;
+}
+
+/***********************************************************************
+***                             LAPTOPS                              ***
+***********************************************************************/
+
+@media only screen and (min-width: 768px) {
+  .timetable__header {
+    padding: var(--padding-desktop);
+  }
+
+  .timetable__data {
+    padding: calc(var(--padding-desktop) / 2);
+  }
+
+  .timetable__data__class {
+    padding: calc(var(--padding-desktop) / 4) calc(var(--padding-desktop) / 2);
+    margin-bottom: calc(var(--padding-desktop) / 2);
+  }
+
+  .timetable__data__time {
+    margin-bottom: calc(var(--padding-desktop) / 2);
+  }
+}
