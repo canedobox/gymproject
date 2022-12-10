@@ -167,71 +167,86 @@
       <!-- Main -->
       <main>
         <div class="main-wrapper">
-          <div class="section-wrapper">
+          <!-- Contact us section -->
+          <div class="contact-form-section section-wrapper">
             <div class="section-content container">
-              <!--Card form-->
-              <form
-                name="formValidation"
-                id="formValidation"
-                class="form-container"
-              >
-                <div
-                  class="contact-form-box"
-                  name="formValidation"
-                  id="formValidation"
-                >
+              <!-- Card form -->
+              <form id="contact-form">
+                <div class="contact-form-box">
                   <h1 class="contact-card-title">Contact Us</h1>
-                  <!--Name Label-->
+                  <!-- Name -->
                   <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name"
+                      >Name <span class="accent-color">*</span></label
+                    >
                     <input
-                      class="form-control"
-                      id="name"
                       type="text"
-                      name="Name"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      spellcheck="false"
+                      autocomplete="name"
                       minlength="2"
                       required
                     />
                   </div>
-                  <!--Email label-->
+                  <!-- Email -->
                   <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"
+                      >Email <span class="accent-color">*</span></label
+                    >
                     <input
-                      class="form-control"
-                      id="email"
                       type="email"
-                      name="Email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      spellcheck="false"
+                      autocomplete="email"
                       required
                     />
                   </div>
-                  <!--Selection menu-->
+                  <!-- Subject -->
                   <div class="form-group">
-                    <label for="subject">Subject</label>
+                    <label for="subject"
+                      >Subject <span class="accent-color">*</span></label
+                    >
                     <select
-                      class="form-select"
                       id="subject"
-                      aria-label="select-option"
+                      name="subject"
+                      class="form-select"
                       required
                     >
                       <option value selected>Please select an option</option>
-                      <option value="1">I want to join!</option>
-                      <option value="2">General info</option>
-                      <option value="3">Feedback</option>
-                      <option value="3">Other</option>
+                      <option value="join">I want to join!</option>
+                      <option value="general-info">General info</option>
+                      <option value="give-feedback">Give Feedback</option>
+                      <option value="book-massage">Book a Sport Massage</option>
+                      <option value="other">Other</option>
                     </select>
                   </div>
-                  <!--Message box-->
+                  <!-- Message -->
                   <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="message"
+                      >Message <span class="accent-color">*</span></label
+                    >
                     <textarea
-                      class="form-control"
                       id="message"
-                      name="formMessage"
+                      name="message"
+                      class="form-control"
+                      spellcheck="true"
                       maxlength="500"
                       required
                     ></textarea>
                   </div>
-                  <input class="contact-btn" type="submit" value="Submit" />
+                  <!-- Validation message -->
+                  <div id="validation-message" style="display: none"></div>
+                  <!-- Submit button -->
+                  <input
+                    id="submit-btn"
+                    class="button button--primary button--large button--full-width"
+                    type="submit"
+                    value="Send message"
+                  />
                 </div>
               </form>
             </div>
