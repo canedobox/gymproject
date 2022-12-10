@@ -39,7 +39,9 @@
   --color-gray-800: #333333;
   --color-gray-900: #1a1a1a;
   --color-black: #000000;
-  --color-error: #f31d2f;
+  --color-error-50: #fff7f7;
+  --color-error-500: #ff3030;
+  --color-error-700: #840000;
   --color-warning: #ffc800;
   --color-success: #00b888;
 

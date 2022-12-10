@@ -28,6 +28,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact-page.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -157,8 +158,89 @@
       <!-- Main -->
       <main>
         <div class="main-wrapper">
-          <div class="section-wrapper">
-            <div class="section-content container">CONTACT US PAGE</div>
+          <!-- Contact us section -->
+          <div class="contact-form-section section-wrapper">
+            <div class="section-content container">
+              <!-- Card form -->
+              <form id="contact-form">
+                <div class="contact-form-box">
+                  <h1 class="contact-card-title">Contact Us</h1>
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="name"
+                      >Name <span class="accent-color">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      spellcheck="false"
+                      autocomplete="name"
+                      minlength="2"
+                      required
+                    />
+                  </div>
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="email"
+                      >Email <span class="accent-color">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      spellcheck="false"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                  <!-- Subject -->
+                  <div class="form-group">
+                    <label for="subject"
+                      >Subject <span class="accent-color">*</span></label
+                    >
+                    <select
+                      id="subject"
+                      name="subject"
+                      class="form-select"
+                      required
+                    >
+                      <option value selected>Please select an option</option>
+                      <option value="join">I want to join!</option>
+                      <option value="general-info">General info</option>
+                      <option value="give-feedback">Give Feedback</option>
+                      <option value="book-massage">Book a Sport Massage</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-group">
+                    <label for="message"
+                      >Message <span class="accent-color">*</span></label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      spellcheck="true"
+                      maxlength="500"
+                      required
+                    ></textarea>
+                  </div>
+                  <!-- Validation message -->
+                  <div id="validation-message" style="display: none"></div>
+                  <!-- Submit button -->
+                  <input
+                    id="submit-btn"
+                    class="button button--primary button--large button--full-width"
+                    type="submit"
+                    value="Send message"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </main>
@@ -222,5 +304,7 @@
 
     <!-- Main JavaScript file -->
     <script src="./js/main.js"></script>
+    <!-- Contact JavaScript file -->
+    <script type="text/javascript" src="./js/contact.js"></script>
   </body>
 </html>
