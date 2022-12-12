@@ -26,4 +26,4 @@ Giulia Culoma - x21248532
 
 ---
 
-Tested using Google Chrome.
+Tested on multiple browsers: Google Chrome, Firefox and Microsoft Edge.
