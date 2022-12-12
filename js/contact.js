@@ -25,7 +25,7 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       name.focus();
       // console fail message
-      console.log('#name validation failed');
+      console.log('#name validation failed: ' + validationMessage.innerText);
       return;
     }
     //check if name is not shorter then 2 characters
@@ -34,7 +34,7 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       name.focus();
       // console fail message
-      console.log('#name validation failed');
+      console.log('#name validation failed: ' + validationMessage.innerText);
       return;
     }
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       email.focus();
       // console fail message
-      console.log('#email validation failed');
+      console.log('#email validation failed: ' + validationMessage.innerText);
       return;
     }
     //check if email is valid
@@ -53,7 +53,7 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       email.focus();
       // console fail message
-      console.log('#email validation failed');
+      console.log('#email validation failed: ' + validationMessage.innerText);
       return;
     }
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       subject.focus();
       // console fail message
-      console.log('#select validation failed');
+      console.log('#select validation failed: ' + validationMessage.innerText);
       return;
     }
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       message.focus();
       // console fail message
-      console.log('#message validation failed');
+      console.log('#message validation failed: ' + validationMessage.innerText);
       return;
     }
     // check if message is not longer then 500 characters
@@ -83,9 +83,12 @@ $(document).ready(function () {
       validationMessage.style.display = 'block';
       message.focus();
       // console fail message
-      console.log('#message validation failed');
+      console.log('#message validation failed: ' + validationMessage.innerText);
       return;
     }
+
+    // console success message
+    console.log('Message sent successfully');
 
     // display success alert message
     alert(
@@ -98,8 +101,6 @@ $(document).ready(function () {
         '\nMessage: ' +
         message.value
     );
-    // console success message
-    console.log('Message sent successfully');
 
     // reset form and validation message
     name.value = '';
