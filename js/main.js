@@ -48,14 +48,17 @@ $(document).ready(function () {
     toggleDrawer();
   });
 
-  // Set click event for fake-link class.
-  $('.fake-link').click(function (event) {
+  // Set click event for footer-policy-link class.
+  $('.footer-policy-link').click(function (event) {
     // Prevent default click behavior.
     event.preventDefault();
-    // Display an alert message when a fake link is clicked.
-    alert('"' + $(this).text().trim() + '" link was clicked!');
 
     // Log info.
-    console.log('"' + $(this).text().trim() + '" link was clicked!');
+    console.log(
+      '"' + $(this).text().trim() + '" footer-policy-link was clicked!'
+    );
+
+    // Display an alert message when a footer-policy-link is clicked.
+    alert('"' + $(this).text().trim() + '" policy...');
   });
 });

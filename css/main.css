@@ -120,7 +120,7 @@ body.modal {
   max-width: var(--container-max-width) !important;
 }
 
-.fake-link {
+.footer-policy-link {
   cursor: pointer;
 }
 
