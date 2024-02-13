@@ -1,6 +1,6 @@
 # gymproject
 
-GYMPROJECT website
+GYMPROJECT website: <https://canedobox.github.io/gymproject/>
 
 ---
 
